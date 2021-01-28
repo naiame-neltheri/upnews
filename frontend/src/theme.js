@@ -21,7 +21,7 @@ theme.breakpoints.md = theme.breakpoints[1]
 theme.breakpoints.lg = theme.breakpoints[2]
 theme.breakpoints.xl = theme.breakpoints[3]
 
-theme.space.none = theme.space[0]
+theme.space.xs = theme.space[0]
 theme.space.sm = theme.space[1]
 theme.space.md = theme.space[2]
 theme.space.lg = theme.space[3]

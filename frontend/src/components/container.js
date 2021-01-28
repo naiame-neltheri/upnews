@@ -9,7 +9,6 @@ import {
 import theme from '../theme.js';
 
 const container = styled.div`
-	background-color: transparent;
 	@media screen and (min-width: ${theme.breakpoints.sm}) {
 		padding: 8px;
 	}
@@ -22,16 +21,15 @@ const container = styled.div`
 	@media screen and (min-width: ${theme.breakpoints.xl}) {
 		padding: 46px;
 	}
-	@media screen and (min-width: ${theme.breakpoints.none}) {
+	@media screen and (min-width: ${theme.breakpoints.xs}) {
 		padding: 4px;
 	}
-	width: 100%;
 	margin: 0px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-image: ${props => props.bgimg ? `url(${props.bgimg})` : ''};
+	background-color: ${props => props.blackbg ? 'black' : 'white'};
 	${space}
 	${color}
 	${flexbox}
@@ -40,3 +38,4 @@ const container = styled.div`
 `
 
 export default container;
+// background-image: ${props => props.bgimg ? `url(${props.bgimg})` : ''};

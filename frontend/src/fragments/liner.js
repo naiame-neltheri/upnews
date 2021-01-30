@@ -8,6 +8,8 @@ const liner = styled.hr`
 	border: 1px solid ${props => props.theme.colors.primary};
 	width: 80%;
 	margin: auto;
+	${color}
+	${layout}
 `
 
 export default liner;

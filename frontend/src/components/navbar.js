@@ -12,7 +12,7 @@ function Navbar() {
 				<Link to="/404">Products</Link>
 			</NavItem>
 			<NavItem borderTopRightRadius="5px" borderBottomRightRadius="5px" fontSize={[0,0,1,2]}>
-				<Link to="/about">About us gg</Link>
+				<Link to="/about">About us</Link>
 			</NavItem>
 		</Container>
 	);

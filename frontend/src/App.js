@@ -33,18 +33,3 @@ function RouteWithSubRoutes(route) {
 }
 
 export default App;
-    // <Route path="/" component = {IndexScreen}>
-    //                 </Route>
-    //                 <Route path="/about" component = {AboutScreen}>
-    //                 </Route>
-                // 
-
-                // <Route path="/about">
-                //     <AboutScreen />
-                // </Route>
-                // <Route exact path="/">
-                //     <IndexScreen />
-                // </Route>
-                // <Route path="*">
-                //     <NotFound />
-                // </Route>

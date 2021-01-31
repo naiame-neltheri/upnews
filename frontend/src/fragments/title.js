@@ -17,6 +17,8 @@ const title = styled.h3`
 	@media screen and (min-width: ${props => props.theme.breakpoints.xl}) {
 		font-size: ${props => props.theme.fontSizes.xl}px;
 	}
+	${typography}
+	${color}
 `
 
 export default title;

@@ -1,6 +1,7 @@
 import Container from '../fragments/container.js';
 import Title from '../fragments/title.js';
 import Paragraph from '../fragments/paragraph.js';
+import Link from '../fragments/link.js';
 
 function Card() {
 	return(
@@ -10,9 +11,13 @@ function Card() {
 			border="1.5px solid #DCDCDC"
 			borderRadius="5px"
 			width="80%" p={[2,2,1,1]}
-			boxShadow="3px 2px #DCDCDC">
+			boxShadow="2px 2px #DCDCDC"
+			maxHeight={[64,64,72,72]}
+			overflow="hidden">
 			<Container maxWidth="25%" p={[1,1,3,3]}>
-				<Title>CARD TITLE</Title>
+				<Link to="/test">
+					<Title>CARD TITLE</Title>
+				</Link>
 			</Container>
 			<Container flex="1" alignItems="stretch">
 				<Paragraph>

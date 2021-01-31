@@ -4,7 +4,10 @@ import {
 	color,
 	flexbox,
 	layout,
-	background
+	background,
+	border,
+	typography,
+	shadow
 } from 'styled-system';
 
 const container = styled.div`
@@ -34,6 +37,9 @@ const container = styled.div`
 	${flexbox}
 	${layout}
 	${background}
+	${border}
+	${typography}
+	${shadow}
 `
 
 export default container;

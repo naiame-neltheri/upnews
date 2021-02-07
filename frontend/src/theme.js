@@ -1,20 +1,24 @@
 const theme = {
-	fontSizes: [12, 14, 16, 20, 24, 32],
-	space: [0, 2, 4, 8, 16, 32],
+	fontSizes: [8, 10, 12, 14, 16, 20, 24, 32],
+	space: [0, 2, 4, 8, 16, 24, 32],
 	breakpoints: ['320px', '768px', '1260px', '1920px'],
 	colors: {
-		primary: '#A40E4C',
+		primary: '#1E1E24',
 		background: '#2C2C54',
 		border: '#ACC3A6',
 		foreground: '#F5D6BA',
-		secondary: '#F49D6E'
+		secondary: '#9DA2AB',
+		success: '#53DD6C',
+		danger: '#CF1259',
+		warning: '#F7E8A4'
 	}
 }
 
-theme.fontSizes.sm = theme.fontSizes[0]
-theme.fontSizes.md = theme.fontSizes[1]
-theme.fontSizes.lg = theme.fontSizes[2]
-theme.fontSizes.xl = theme.fontSizes[3]
+theme.fontSizes.sm = theme.fontSizes[1]
+theme.fontSizes.md = theme.fontSizes[2]
+theme.fontSizes.lg = theme.fontSizes[3]
+theme.fontSizes.xl = theme.fontSizes[4]
+theme.fontSizes.title= theme.fontSizes[5]
 
 theme.breakpoints.sm = theme.breakpoints[0]
 theme.breakpoints.md = theme.breakpoints[1]

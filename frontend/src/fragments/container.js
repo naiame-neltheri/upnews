@@ -12,7 +12,7 @@ import {
 
 const container = styled.div`
 	@media screen and (min-width: ${props => props.theme.breakpoints.sm}) {
-		padding: ${props => props.theme.space.xl}px;
+		padding: ${props => props.theme.space.sm}px;
 	}
 	@media screen and (min-width: ${props => props.theme.breakpoints.md}) {
 		padding: ${props => props.theme.space.md}px;

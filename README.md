@@ -8,8 +8,9 @@ Upnews is an open source application for keeping up to date in world news
 
 ## TODO List
 ------------
-- [ ] Add router
+- [x] Add router
 - [ ] Add About page
 - [ ] Add Contact page
-- [ ] Add Product page
 - [x] Add Landing page
+- [x] Add Login page
+- [ ] Add Register page

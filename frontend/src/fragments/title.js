@@ -5,18 +5,9 @@ import {
 } from 'styled-system';
 
 const title = styled.h3`
-	@media screen and (min-width: ${props => props.theme.breakpoints.sm}) {
-		font-size: ${props => props.theme.fontSizes.sm}px;
-	}
-	@media screen and (min-width: ${props => props.theme.breakpoints.md}) {
-		font-size: ${props => props.theme.fontSizes.md}px;
-	}
-	@media screen and (min-width: ${props => props.theme.breakpoints.lg}) {
-		font-size: ${props => props.theme.fontSizes.lg}px;
-	}
-	@media screen and (min-width: ${props => props.theme.breakpoints.xl}) {
-		font-size: ${props => props.theme.fontSizes.xl}px;
-	}
+	color: ${props => props.theme.colors.primary};
+	text-transform: uppercase;
+	margin: 0px;
 	${typography}
 	${color}
 `

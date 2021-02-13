@@ -13,6 +13,7 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 __pycache__/
 *.pyc
-.env
-app.log
-venv/
+backend/.env
+backend/.alembic_env
+backend/app.log
+backend/venv/

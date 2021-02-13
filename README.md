@@ -1,6 +1,8 @@
 Upnews is an open source application for keeping up to date in world news
 
-#Currently under development
+# Currently under development
+UPNEWS is new social media app that anyone can post without FEE, read without FEE
+Create your own news paper by UPNEWS
 
 ## Contributing
 ------------

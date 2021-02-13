@@ -1,0 +1,1615 @@
+INFO:uvicorn.error:Started server process [3551]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3551]
+INFO:uvicorn.error:Started server process [3798]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3798]
+INFO:uvicorn.error:Started server process [3862]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3862]
+INFO:uvicorn.error:Started server process [3963]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3963]
+2021-02-13 16:01:01 Started server process [4435]
+2021-02-13 16:01:01 Waiting for application startup.
+2021-02-13 16:01:01 Application startup complete.
+2021-02-13 16:01:22 Shutting down
+2021-02-13 16:01:22 Waiting for application shutdown.
+2021-02-13 16:01:22 Application shutdown complete.
+2021-02-13 16:01:22 Finished server process [4435]
+2021-02-13 16:01:22 Started server process [4464]
+2021-02-13 16:01:22 Waiting for application startup.
+2021-02-13 16:01:22 Application startup complete.
+2021-02-13 16:01:27 Shutting down
+2021-02-13 16:01:27 Waiting for application shutdown.
+2021-02-13 16:01:27 Application shutdown complete.
+2021-02-13 16:01:27 Finished server process [4464]
+2021-02-13 16:12:29 uvicorn.error INFO Started server process [5011]
+2021-02-13 16:12:29 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:12:29 uvicorn.error INFO Application startup complete.
+2021-02-13 16:12:44 uvicorn.error INFO Shutting down
+2021-02-13 16:12:44 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:12:44 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:12:44 uvicorn.error INFO Finished server process [5011]
+2021-02-13 16:13:18 uvicorn.error INFO Started server process [5116]
+2021-02-13 16:13:18 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:13:18 uvicorn.error INFO Application startup complete.
+2021-02-13 16:13:29 uvicorn.error INFO Shutting down
+2021-02-13 16:13:30 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:13:30 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:13:30 uvicorn.error INFO Finished server process [5116]
+2021-02-13 16:13:30 uvicorn.error INFO Started server process [5146]
+2021-02-13 16:13:30 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:13:30 uvicorn.error INFO Application startup complete.
+2021-02-13 16:13:34 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./api/modules/routes.py", line 33, in get_all_user
+    data = get_users(db)
+  File "./api/core/crud.py", line 7, in get_users
+    return db.query(schema.User).all()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "None" to address: Name or service not known
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2021-02-13 16:13:41 uvicorn.error INFO Shutting down
+2021-02-13 16:13:41 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:13:41 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:13:41 uvicorn.error INFO Finished server process [5146]
+2021-02-13 16:13:43 uvicorn.error INFO Started server process [5207]
+2021-02-13 16:13:43 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:13:43 uvicorn.error INFO Application startup complete.
+2021-02-13 16:13:45 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./api/modules/routes.py", line 33, in get_all_user
+    data = get_users(db)
+  File "./api/core/crud.py", line 7, in get_users
+    return db.query(schema.User).all()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3373, in all
+    return list(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "None" to address: Name or service not known
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2021-02-13 16:14:58 uvicorn.error INFO Shutting down
+2021-02-13 16:14:58 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:14:58 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:14:58 uvicorn.error INFO Finished server process [5207]
+2021-02-13 16:14:59 uvicorn.error INFO Started server process [5399]
+2021-02-13 16:14:59 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:14:59 uvicorn.error INFO Application startup complete.
+2021-02-13 16:15:16 uvicorn.error INFO Shutting down
+2021-02-13 16:15:16 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:15:16 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:15:16 uvicorn.error INFO Finished server process [5399]
+2021-02-13 16:15:18 uvicorn.error INFO Started server process [5456]
+2021-02-13 16:15:18 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:15:18 uvicorn.error INFO Application startup complete.
+2021-02-13 16:15:20 uvicorn.error INFO Shutting down
+2021-02-13 16:15:20 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:15:20 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:15:20 uvicorn.error INFO Finished server process [5456]
+2021-02-13 16:15:48 uvicorn.error INFO Started server process [5579]
+2021-02-13 16:15:48 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:15:48 uvicorn.error INFO Application startup complete.
+2021-02-13 16:15:54 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./api/modules/routes.py", line 34, in get_all_user
+    logging.DEBUG("TEST")
+TypeError: 'int' object is not callable
+2021-02-13 16:16:47 uvicorn.error INFO Shutting down
+2021-02-13 16:16:47 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:16:47 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:16:47 uvicorn.error INFO Finished server process [5579]
+2021-02-13 16:17:30 uvicorn.error INFO Started server process [5827]
+2021-02-13 16:17:30 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:17:30 uvicorn.error INFO Application startup complete.
+2021-02-13 16:17:34 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./api/modules/routes.py", line 34, in get_all_user
+    logging.DEBUG("TEST")
+NameError: name 'logging' is not defined
+2021-02-13 16:17:41 uvicorn.error INFO Shutting down
+2021-02-13 16:17:41 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:17:41 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:17:41 uvicorn.error INFO Finished server process [5827]
+2021-02-13 16:17:42 uvicorn.error INFO Started server process [5885]
+2021-02-13 16:17:42 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:17:42 uvicorn.error INFO Application startup complete.
+2021-02-13 16:17:43 uvicorn.error ERROR Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 148, in run_endpoint_function
+    return await dependant.call(**values)
+  File "./api/modules/routes.py", line 34, in get_all_user
+    logger.DEBUG("TEST")
+AttributeError: 'Logger' object has no attribute 'DEBUG'
+2021-02-13 16:17:48 uvicorn.error INFO Shutting down
+2021-02-13 16:17:48 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:17:48 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:17:48 uvicorn.error INFO Finished server process [5885]
+2021-02-13 16:17:49 uvicorn.error INFO Started server process [5913]
+2021-02-13 16:17:49 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:17:49 uvicorn.error INFO Application startup complete.
+2021-02-13 16:20:35 uvicorn.error INFO Shutting down
+2021-02-13 16:20:35 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:20:35 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:20:35 uvicorn.error INFO Finished server process [5913]
+2021-02-13 16:21:52 uvicorn.error INFO Started server process [6178]
+2021-02-13 16:21:52 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:21:52 uvicorn.error INFO Application startup complete.
+2021-02-13 16:22:32 default DEBUG TEST
+2021-02-13 16:22:37 uvicorn.error INFO Shutting down
+2021-02-13 16:22:37 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:22:37 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:22:37 uvicorn.error INFO Finished server process [6178]
+2021-02-13 16:22:38 uvicorn.error INFO Started server process [6251]
+2021-02-13 16:22:38 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:22:38 uvicorn.error INFO Application startup complete.
+2021-02-13 16:22:45 default DEBUG TEST
+2021-02-13 16:23:32 uvicorn.error INFO Shutting down
+2021-02-13 16:23:32 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:23:32 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:23:32 uvicorn.error INFO Finished server process [6251]
+2021-02-13 16:23:32 uvicorn.error INFO Started server process [6394]
+2021-02-13 16:23:32 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:23:32 uvicorn.error INFO Application startup complete.
+2021-02-13 16:24:40 uvicorn.error INFO Shutting down
+2021-02-13 16:24:40 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:24:40 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:24:40 uvicorn.error INFO Finished server process [6394]
+2021-02-13 16:24:41 uvicorn.error INFO Started server process [6527]
+2021-02-13 16:24:41 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:24:41 uvicorn.error INFO Application startup complete.
+2021-02-13 16:24:57 uvicorn.error INFO Shutting down
+2021-02-13 16:24:57 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:24:57 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:24:57 uvicorn.error INFO Finished server process [6527]
+2021-02-13 16:24:57 uvicorn.error INFO Started server process [6559]
+2021-02-13 16:24:57 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:24:57 uvicorn.error INFO Application startup complete.
+2021-02-13 16:26:12 uvicorn.error INFO Shutting down
+2021-02-13 16:26:12 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:26:12 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:26:12 uvicorn.error INFO Finished server process [6559]
+2021-02-13 16:26:13 uvicorn.error INFO Started server process [6759]
+2021-02-13 16:26:13 uvicorn.error INFO Waiting for application startup.
+2021-02-13 16:26:13 uvicorn.error INFO Application startup complete.
+2021-02-13 16:26:16 default DEBUG TEST
+2021-02-13 16:26:18 default DEBUG TEST
+2021-02-13 16:26:49 uvicorn.error INFO Shutting down
+2021-02-13 16:26:49 uvicorn.error INFO Waiting for application shutdown.
+2021-02-13 16:26:49 uvicorn.error INFO Application shutdown complete.
+2021-02-13 16:26:49 uvicorn.error INFO Finished server process [6759]
+[2021-02-13 16:26:50 uvicorn.error] : INFO - Started server process [6835]
+[2021-02-13 16:26:50 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:26:50 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:27:03 default] : DEBUG - TEST
+[2021-02-13 16:27:34 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:27:34 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:27:34 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:27:34 uvicorn.error] : INFO - Finished server process [6835]
+[2021-02-13 16:27:35 uvicorn.error] : INFO - Started server process [6901]
+[2021-02-13 16:27:35 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:27:35 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:27:37 BACKEND-SRV] : DEBUG - TEST
+[2021-02-13 16:27:46 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Finished server process [6901]
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Started server process [6943]
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:27:47 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:27:50 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:27:50 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:27:50 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:27:50 uvicorn.error] : INFO - Finished server process [6943]
+[2021-02-13 16:27:51 uvicorn.error] : INFO - Started server process [6967]
+[2021-02-13 16:27:51 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:27:51 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:27:52 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:29:54 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:29:54 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:29:54 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:29:54 uvicorn.error] : INFO - Finished server process [6967]
+[2021-02-13 16:29:55 uvicorn.error] : INFO - Started server process [7195]
+[2021-02-13 16:29:55 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:29:55 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:30:21 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:30:21 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:30:21 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:30:21 uvicorn.error] : INFO - Finished server process [7195]
+[2021-02-13 16:30:22 uvicorn.error] : INFO - Started server process [7272]
+[2021-02-13 16:30:22 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:30:22 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:30:24 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:34:46 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:34:46 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:34:46 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:34:46 uvicorn.error] : INFO - Finished server process [7272]
+[2021-02-13 16:34:47 uvicorn.error] : INFO - Started server process [7683]
+[2021-02-13 16:34:47 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:34:47 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:35:03 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:35:03 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:35:03 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:35:03 uvicorn.error] : INFO - Finished server process [7683]
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Started server process [7709]
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Finished server process [7709]
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Started server process [7716]
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:35:04 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:35:22 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Finished server process [7716]
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Started server process [7753]
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:35:23 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:35:49 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:35:49 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:35:49 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:35:49 uvicorn.error] : INFO - Finished server process [7753]
+[2021-02-13 16:35:50 uvicorn.error] : INFO - Started server process [7778]
+[2021-02-13 16:35:50 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:35:50 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Finished server process [7778]
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Started server process [7840]
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:36:40 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:37:53 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:37:53 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:37:53 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:37:53 uvicorn.error] : INFO - Finished server process [7840]
+[2021-02-13 16:37:54 uvicorn.error] : INFO - Started server process [7964]
+[2021-02-13 16:37:54 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:37:54 uvicorn.error] : INFO - Application startup complete.
+TEST
+[2021-02-13 16:37:56 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:38:36 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:38:36 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:38:36 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:38:36 uvicorn.error] : INFO - Finished server process [7964]
+[2021-02-13 16:38:37 uvicorn.error] : INFO - Started server process [8008]
+[2021-02-13 16:38:37 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:38:37 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:38:38 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+TEST
+[2021-02-13 16:38:38 BACKEND-SERVICE] : DEBUG - TEST
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:38:55 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+TEST
+[2021-02-13 16:38:55 BACKEND-SERVICE] : DEBUG - TEST
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:39:04 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+TEST
+[2021-02-13 16:39:04 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Finished server process [8008]
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Started server process [8214]
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:39:31 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:40:10 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:40:10 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:40:10 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:40:10 uvicorn.error] : INFO - Finished server process [8214]
+[2021-02-13 16:40:11 uvicorn.error] : INFO - Started server process [8252]
+[2021-02-13 16:40:11 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:40:11 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:40:14 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+TEST
+[2021-02-13 16:40:14 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Finished server process [8252]
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Started server process [8304]
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:40:28 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:41:17 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:41:17 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:41:17 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:41:17 uvicorn.error] : INFO - Finished server process [8304]
+[2021-02-13 16:41:18 uvicorn.error] : INFO - Started server process [8341]
+[2021-02-13 16:41:18 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:41:18 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:43:46 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:43:46 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:43:46 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:43:46 uvicorn.error] : INFO - Finished server process [8341]
+[2021-02-13 16:43:47 uvicorn.error] : INFO - Started server process [8384]
+[2021-02-13 16:43:47 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:43:47 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:43:55 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+TEST
+[2021-02-13 16:43:55 BACKEND-SERVICE] : DEBUG - TEST
+[2021-02-13 16:44:04 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:44:04 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:44:04 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:44:04 uvicorn.error] : INFO - Finished server process [8384]
+[2021-02-13 16:44:05 uvicorn.error] : INFO - Started server process [8446]
+[2021-02-13 16:44:05 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:44:05 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:44:06 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[]
+[2021-02-13 16:44:06 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:44:35 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:44:35 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:44:35 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:44:35 uvicorn.error] : INFO - Finished server process [8446]
+[2021-02-13 16:44:36 uvicorn.error] : INFO - Started server process [8491]
+[2021-02-13 16:44:36 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:44:36 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:44:36 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+Result : []
+[2021-02-13 16:44:36 BACKEND-SERVICE] : DEBUG - Requested all users from database
+Result : []
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Finished server process [8491]
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Started server process [8582]
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:45:33 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:45:34 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:45:34 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:45:34 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:46:52 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:46:52 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:46:52 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:46:52 uvicorn.error] : INFO - Finished server process [8582]
+[2021-02-13 16:46:53 uvicorn.error] : INFO - Started server process [8760]
+[2021-02-13 16:46:53 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:46:53 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:46:55 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:46:55 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:46:55 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:47:07 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:47:07 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:47:07 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:47:07 uvicorn.error] : INFO - Finished server process [8760]
+[2021-02-13 16:47:08 uvicorn.error] : INFO - Started server process [8802]
+[2021-02-13 16:47:08 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:47:08 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:47:10 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:47:10 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:47:10 BACKEND-SERVICE] : DEBUG - []
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:47:17 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:47:17 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:47:17 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Finished server process [8802]
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Started server process [8836]
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:47:26 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:47:30 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:47:30 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:47:30 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:54:18 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:54:18 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:54:18 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:54:18 uvicorn.error] : INFO - Finished server process [8836]
+[2021-02-13 16:54:19 uvicorn.error] : INFO - Started server process [9224]
+[2021-02-13 16:54:19 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:54:19 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[]
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Finished server process [9224]
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Started server process [9274]
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:54:31 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:55:28 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:55:29 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:55:29 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:55:29 uvicorn.error] : INFO - Finished server process [9274]
+[2021-02-13 16:55:37 uvicorn.error] : INFO - Started server process [9339]
+[2021-02-13 16:55:37 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:55:37 uvicorn.error] : INFO - Application startup complete.
+SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:55:40 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+Requested all users from database
+[2021-02-13 16:55:40 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[]
+[2021-02-13 16:55:40 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:58:14 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:58:14 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:58:14 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:58:14 uvicorn.error] : INFO - Finished server process [9339]
+[2021-02-13 16:58:15 uvicorn.error] : INFO - Started server process [9610]
+[2021-02-13 16:58:15 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:58:15 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:58:17 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:58:17 BACKEND-SERVICE] : DEBUG - Requested all users from database
+[2021-02-13 16:58:17 BACKEND-SERVICE] : DEBUG - []
+[2021-02-13 16:58:43 uvicorn.error] : INFO - Shutting down
+[2021-02-13 16:58:43 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 16:58:43 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 16:58:43 uvicorn.error] : INFO - Finished server process [9610]
+[2021-02-13 16:58:44 uvicorn.error] : INFO - Started server process [9662]
+[2021-02-13 16:58:44 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 16:58:44 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 16:58:45 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 16:58:45 BACKEND-SERVICE] : DEBUG - Requested all users from database : []
+[2021-02-13 17:00:09 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:00:10 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:00:10 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:00:10 uvicorn.error] : INFO - Finished server process [9662]
+[2021-02-13 17:01:15 uvicorn.error] : INFO - Started server process [9891]
+[2021-02-13 17:01:15 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:01:15 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:02:30 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 17:02:30 BACKEND-SERVICE] : DEBUG - Requested all users from database : []
+[2021-02-13 17:03:35 BACKEND-SERVICE] : ERROR - 'UserCRUD' object has no attribute 'first_name'
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Finished server process [9891]
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Started server process [10242]
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:04:17 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:04:20 BACKEND-SERVICE] : ERROR - 'UserCRUD' object has no attribute 'first_name'
+[2021-02-13 17:05:57 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:05:57 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:05:57 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:05:57 uvicorn.error] : INFO - Finished server process [10242]
+[2021-02-13 17:05:58 uvicorn.error] : INFO - Started server process [10434]
+[2021-02-13 17:05:58 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:05:58 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:06:16 BACKEND-SERVICE] : DEBUG - New user created with ID of 1
+[2021-02-13 17:10:26 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:10:26 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:10:26 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:10:26 uvicorn.error] : INFO - Finished server process [10434]
+[2021-02-13 17:10:27 uvicorn.error] : INFO - Started server process [10583]
+[2021-02-13 17:10:27 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:10:27 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:13:45 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:13:45 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:13:45 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:13:45 uvicorn.error] : INFO - Finished server process [10583]
+[2021-02-13 17:14:16 uvicorn.error] : INFO - Started server process [10829]
+[2021-02-13 17:14:16 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:14:16 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:16:59 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:16:59 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:16:59 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:16:59 uvicorn.error] : INFO - Finished server process [10829]
+[2021-02-13 17:17:00 uvicorn.error] : INFO - Started server process [10910]
+[2021-02-13 17:17:00 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:17:00 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:21:09 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:21:09 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:21:09 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:21:09 uvicorn.error] : INFO - Finished server process [10910]
+[2021-02-13 17:21:10 uvicorn.error] : INFO - Started server process [11102]
+[2021-02-13 17:21:10 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:21:10 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:21:18 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:21:18 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:21:18 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:21:18 uvicorn.error] : INFO - Finished server process [11102]
+[2021-02-13 17:21:19 uvicorn.error] : INFO - Started server process [11118]
+[2021-02-13 17:21:19 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:21:19 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:22:09 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:22:09 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:22:09 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:22:09 uvicorn.error] : INFO - Finished server process [11118]
+[2021-02-13 17:22:10 uvicorn.error] : INFO - Started server process [11182]
+[2021-02-13 17:22:10 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:22:10 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:23:51 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:23:51 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:23:51 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:23:51 uvicorn.error] : INFO - Finished server process [11182]
+[2021-02-13 17:24:03 uvicorn.error] : INFO - Started server process [11361]
+[2021-02-13 17:24:03 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:24:03 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Finished server process [11361]
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Started server process [11791]
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:37:36 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Finished server process [11791]
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Started server process [11853]
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:37:54 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:37:59 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 54, in get_profile
+    ret = get_user(db, user_id)
+NameError: name 'get_user' is not defined
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Finished server process [11853]
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Started server process [12174]
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:40:51 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:41:01 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Finished server process [12174]
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Started server process [12221]
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:41:02 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:42:27 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:42:27 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:42:27 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:42:27 uvicorn.error] : INFO - Finished server process [12221]
+[2021-02-13 17:43:11 uvicorn.error] : INFO - Started server process [12317]
+[2021-02-13 17:43:11 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:43:11 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:46:09 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:46:09 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:46:09 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:46:09 uvicorn.error] : INFO - Finished server process [12317]
+[2021-02-13 17:47:43 uvicorn.error] : INFO - Started server process [12550]
+[2021-02-13 17:47:43 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:47:43 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:47:48 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 54, in get_profile
+    ret = get_user(db, user_id)
+NameError: name 'get_user' is not defined
+[2021-02-13 17:47:54 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:47:54 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:47:54 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:47:54 uvicorn.error] : INFO - Finished server process [12550]
+[2021-02-13 17:47:55 uvicorn.error] : INFO - Started server process [12594]
+[2021-02-13 17:47:55 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:47:55 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:48:13 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:48:13 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:48:13 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:48:13 uvicorn.error] : INFO - Finished server process [12594]
+[2021-02-13 17:48:14 uvicorn.error] : INFO - Started server process [12639]
+[2021-02-13 17:48:14 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:48:14 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:48:15 BACKEND-SERVICE] : DEBUG - Getting user profile <api.modules.schema.User object at 0x7f37898114c0>
+[2021-02-13 17:48:15 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 56, in get_profile
+    return ProfileResponse(data = ret, success = True, error = False)
+  File "pydantic/main.py", line 362, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ProfileResponse
+data
+  value is not a valid list (type=type_error.list)
+[2021-02-13 17:49:49 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:49:49 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:49:49 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:49:49 uvicorn.error] : INFO - Finished server process [12639]
+[2021-02-13 17:49:50 uvicorn.error] : INFO - Started server process [12816]
+[2021-02-13 17:49:50 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:49:50 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:49:51 BACKEND-SERVICE] : DEBUG - Getting user profile <api.modules.schema.User object at 0x7f69f13214c0>
+[2021-02-13 17:49:51 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 57, in get_profile
+    return ProfileResponse(data = ret, success = True, error = False)
+  File "pydantic/main.py", line 362, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ProfileResponse
+data
+  value is not a valid list (type=type_error.list)
+[2021-02-13 17:50:58 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:50:58 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:50:58 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:50:58 uvicorn.error] : INFO - Finished server process [12816]
+[2021-02-13 17:50:59 uvicorn.error] : INFO - Started server process [12953]
+[2021-02-13 17:50:59 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:50:59 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:51:19 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:51:19 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:51:19 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:51:19 uvicorn.error] : INFO - Finished server process [12953]
+[2021-02-13 17:51:20 uvicorn.error] : INFO - Started server process [13016]
+[2021-02-13 17:51:20 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:51:20 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:51:22 BACKEND-SERVICE] : ERROR - 'User' object has no attribute '__dct__'
+[2021-02-13 17:51:26 BACKEND-SERVICE] : ERROR - 'User' object has no attribute '__dct__'
+[2021-02-13 17:52:05 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:52:05 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:52:05 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:52:05 uvicorn.error] : INFO - Finished server process [13016]
+[2021-02-13 17:52:06 uvicorn.error] : INFO - Started server process [13102]
+[2021-02-13 17:52:06 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:52:06 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:52:07 BACKEND-SERVICE] : ERROR - 'User' object has no attribute '_asdict'
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Finished server process [13102]
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Started server process [13184]
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:52:48 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:52:50 BACKEND-SERVICE] : DEBUG - Getting user profile <api.modules.schema.User object at 0x7f2d2c986700>
+[2021-02-13 17:52:50 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 57, in get_profile
+    return ProfileResponse(data = ret, success = True, error = False)
+  File "pydantic/main.py", line 362, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ProfileResponse
+data
+  value is not a valid dict (type=type_error.dict)
+[2021-02-13 17:53:13 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:53:13 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:53:13 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:53:13 uvicorn.error] : INFO - Finished server process [13184]
+[2021-02-13 17:53:14 uvicorn.error] : INFO - Started server process [13237]
+[2021-02-13 17:53:14 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:53:14 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:53:16 BACKEND-SERVICE] : DEBUG - Getting user profile <api.modules.schema.User object at 0x7fba42b69700>
+[2021-02-13 17:53:16 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 57, in get_profile
+    return ProfileResponse(data = ret, success = True, error = False)
+  File "pydantic/main.py", line 362, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for ProfileResponse
+data
+  value is not a valid dict (type=type_error.dict)
+[2021-02-13 17:53:34 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:53:34 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:53:34 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:53:34 uvicorn.error] : INFO - Finished server process [13237]
+[2021-02-13 17:53:35 uvicorn.error] : INFO - Started server process [13279]
+[2021-02-13 17:53:35 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:53:35 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:53:37 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:53:37 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:53:37 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:53:37 uvicorn.error] : INFO - Finished server process [13279]
+[2021-02-13 17:53:38 uvicorn.error] : INFO - Started server process [13296]
+[2021-02-13 17:53:38 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:53:38 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:53:39 BACKEND-SERVICE] : DEBUG - Getting user profile {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x7fda0f04d700>, 'password': '473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8', 'first_name': 'string', 'username': 'string', 'id': 1, 'created_at': datetime.datetime(2021, 2, 13, 17, 5, 58), 'last_name': 'string', 'email': 'user@example.com', 'updated_at': None}
+[2021-02-13 17:53:51 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:53:51 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:53:51 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:53:51 uvicorn.error] : INFO - Finished server process [13296]
+[2021-02-13 17:53:52 uvicorn.error] : INFO - Started server process [13354]
+[2021-02-13 17:53:52 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:53:52 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:53:54 BACKEND-SERVICE] : DEBUG - Getting user profile {'_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x7f916b475790>, 'password': '473287f8298dba7163a897908958f7c0eae733e25d2e027992ea2edc9bed2fa8', 'first_name': 'string', 'username': 'string', 'id': 1, 'created_at': datetime.datetime(2021, 2, 13, 17, 5, 58), 'last_name': 'string', 'email': 'user@example.com', 'updated_at': None}
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Finished server process [13354]
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Started server process [13413]
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:55:16 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:55:18 BACKEND-SERVICE] : ERROR - 'dict' object has no attribute 'username'
+[2021-02-13 17:55:39 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:55:39 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:55:39 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:55:39 uvicorn.error] : INFO - Finished server process [13413]
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Started server process [13460]
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:55:40 uvicorn.error] : INFO - Finished server process [13460]
+[2021-02-13 17:55:41 uvicorn.error] : INFO - Started server process [13468]
+[2021-02-13 17:55:41 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:55:41 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:55:42 BACKEND-SERVICE] : ERROR - 'dict' object has no attribute 'username'
+[2021-02-13 17:55:55 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:55:55 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:55:55 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:55:55 uvicorn.error] : INFO - Finished server process [13468]
+[2021-02-13 17:55:56 uvicorn.error] : INFO - Started server process [13510]
+[2021-02-13 17:55:56 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:55:56 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 17:55:57 BACKEND-SERVICE] : DEBUG - Getting user profile {'username': 'string', 'first_name': 'string', 'last_name': 'string', 'email': 'user@example.com', 'created_at': datetime.datetime(2021, 2, 13, 17, 5, 58), 'updated_at': None}
+[2021-02-13 17:56:25 uvicorn.error] : INFO - Shutting down
+[2021-02-13 17:56:25 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 17:56:25 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 17:56:25 uvicorn.error] : INFO - Finished server process [13510]
+[2021-02-13 17:56:26 uvicorn.error] : INFO - Started server process [13561]
+[2021-02-13 17:56:26 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 17:56:26 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:05:42 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 18:07:38 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:07:38 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:07:38 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:07:38 uvicorn.error] : INFO - Finished server process [13561]
+[2021-02-13 18:07:55 uvicorn.error] : INFO - Started server process [14072]
+[2021-02-13 18:07:55 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:07:55 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:07:57 BACKEND-SERVICE] : ERROR - 'function' object has no attribute 'with_entities'
+[2021-02-13 18:08:20 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:08:20 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:08:20 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:08:20 uvicorn.error] : INFO - Finished server process [14072]
+[2021-02-13 18:08:21 uvicorn.error] : INFO - Started server process [14126]
+[2021-02-13 18:08:21 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:08:21 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:08:22 BACKEND-SERVICE] : DEBUG - SELECT users.username AS users_username, users.first_name AS users_first_name, users.last_name AS users_last_name, users.email AS users_email, users.updated_at AS users_updated_at, users.created_at AS users_created_at 
+FROM users
+[2021-02-13 18:10:16 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:10:16 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:10:16 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:10:16 uvicorn.error] : INFO - Finished server process [14126]
+[2021-02-13 18:10:17 uvicorn.error] : INFO - Started server process [14225]
+[2021-02-13 18:10:17 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:10:17 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:10:20 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users
+[2021-02-13 18:12:27 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:12:27 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:12:27 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:12:27 uvicorn.error] : INFO - Finished server process [14225]
+[2021-02-13 18:12:28 uvicorn.error] : INFO - Started server process [14425]
+[2021-02-13 18:12:28 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:12:28 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:12:35 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:12:35 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:12:35 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:12:35 uvicorn.error] : INFO - Finished server process [14425]
+[2021-02-13 18:12:36 uvicorn.error] : INFO - Started server process [14460]
+[2021-02-13 18:12:36 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:12:36 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:12:48 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:12:48 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:12:48 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:12:48 uvicorn.error] : INFO - Finished server process [14460]
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Started server process [14504]
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:12:49 uvicorn.error] : INFO - Finished server process [14504]
+[2021-02-13 18:12:50 uvicorn.error] : INFO - Started server process [14511]
+[2021-02-13 18:12:50 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:12:50 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:14:06 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:14:06 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:14:06 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:14:06 uvicorn.error] : INFO - Finished server process [14511]
+[2021-02-13 18:14:07 uvicorn.error] : INFO - Started server process [14552]
+[2021-02-13 18:14:07 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:14:07 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Finished server process [14552]
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Started server process [14567]
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:14:12 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:14:49 BACKEND-SERVICE] : ERROR - type object 'User' has no attribute 'firstname'
+[2021-02-13 18:15:07 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:15:07 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:15:07 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:15:07 uvicorn.error] : INFO - Finished server process [14567]
+[2021-02-13 18:15:08 uvicorn.error] : INFO - Started server process [14688]
+[2021-02-13 18:15:08 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:15:08 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:15:15 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:15:15 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:15:15 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:15:15 uvicorn.error] : INFO - Finished server process [14688]
+[2021-02-13 18:15:16 uvicorn.error] : INFO - Started server process [14712]
+[2021-02-13 18:15:16 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:15:16 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:15:36 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Finished server process [14712]
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Started server process [14749]
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:15:37 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:15:46 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:15:46 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:15:46 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:15:46 uvicorn.error] : INFO - Finished server process [14749]
+[2021-02-13 18:15:47 uvicorn.error] : INFO - Started server process [14796]
+[2021-02-13 18:15:47 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:15:47 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Finished server process [14796]
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Started server process [14818]
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:15:54 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:16:20 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 209, in app
+    response_data = await serialize_response(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 126, in serialize_response
+    raise ValidationError(errors, field.type_)
+pydantic.error_wrappers.ValidationError: 2 validation errors for BaseResponse
+response -> success
+  field required (type=value_error.missing)
+response -> error
+  field required (type=value_error.missing)
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Finished server process [14818]
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Started server process [14890]
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:16:50 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:16:55 uvicorn.error] : ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 394, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/applications.py", line 111, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 181, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/middleware/errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 82, in __call__
+    raise exc from None
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 566, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 227, in handle
+    await self.app(scope, receive, send)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/routing.py", line 41, in app
+    response = await func(request)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/fastapi/routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/home/naiame/Work/upnews/backend/venv/lib/python3.9/site-packages/starlette/concurrency.py", line 34, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "./api/modules/routes.py", line 35, in login
+    return AuthSuccess(msg = "TEST")
+  File "pydantic/main.py", line 362, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 2 validation errors for AuthSuccess
+success
+  field required (type=value_error.missing)
+error
+  field required (type=value_error.missing)
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Finished server process [14890]
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Started server process [14963]
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:17:28 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:26:41 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Finished server process [14963]
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Started server process [15102]
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:26:42 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:27:08 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:27:08 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:27:08 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:27:08 uvicorn.error] : INFO - Finished server process [15102]
+[2021-02-13 18:27:09 uvicorn.error] : INFO - Started server process [15137]
+[2021-02-13 18:27:09 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:27:09 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:27:10 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.first_name AS users_first_name, users.last_name AS users_last_name, users.password AS users_password, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:27:21 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:27:22 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:27:22 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:27:22 uvicorn.error] : INFO - Finished server process [15137]
+[2021-02-13 18:28:01 uvicorn.error] : INFO - Started server process [15430]
+[2021-02-13 18:28:01 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:28:01 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:29:11 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:29:11 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:29:11 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:29:11 uvicorn.error] : INFO - Finished server process [15430]
+[2021-02-13 18:29:12 uvicorn.error] : INFO - Started server process [15477]
+[2021-02-13 18:29:12 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:29:12 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Finished server process [15477]
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Started server process [15503]
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:29:18 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Finished server process [15503]
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Started server process [15528]
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:29:34 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:29:38 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:29:38 BACKEND-SERVICE] : ERROR - get() missing 1 required positional argument: 'ident'
+[2021-02-13 18:30:33 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:30:33 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:30:33 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:30:33 uvicorn.error] : INFO - Finished server process [15528]
+[2021-02-13 18:30:34 uvicorn.error] : INFO - Started server process [15719]
+[2021-02-13 18:30:34 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:30:34 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:30:36 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:30:36 BACKEND-SERVICE] : ERROR - No row was found for one()
+[2021-02-13 18:30:48 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Finished server process [15719]
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Started server process [15753]
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:30:49 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:30:53 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:30:53 BACKEND-SERVICE] : ERROR - 'Query' object has no attribute 'username'
+[2021-02-13 18:31:06 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:31:06 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:31:06 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:31:06 uvicorn.error] : INFO - Finished server process [15753]
+[2021-02-13 18:31:07 uvicorn.error] : INFO - Started server process [15816]
+[2021-02-13 18:31:07 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:31:07 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:31:09 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:31:09 BACKEND-SERVICE] : ERROR - No row was found for one()
+[2021-02-13 18:31:26 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:31:26 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:31:26 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:31:26 uvicorn.error] : INFO - Finished server process [15816]
+[2021-02-13 18:31:27 uvicorn.error] : INFO - Started server process [15857]
+[2021-02-13 18:31:27 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:31:27 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:31:32 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:31:32 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:31:32 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:31:32 uvicorn.error] : INFO - Finished server process [15857]
+[2021-02-13 18:31:33 uvicorn.error] : INFO - Started server process [15881]
+[2021-02-13 18:31:33 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:31:33 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:31:34 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:31:34 BACKEND-SERVICE] : ERROR - No row was found for one()
+[2021-02-13 18:33:39 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:33:39 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:33:39 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:33:39 uvicorn.error] : INFO - Finished server process [15881]
+[2021-02-13 18:33:40 uvicorn.error] : INFO - Started server process [16081]
+[2021-02-13 18:33:40 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:33:40 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:33:43 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:33:51 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:34:10 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:34:10 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:34:10 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:34:10 uvicorn.error] : INFO - Finished server process [16081]
+[2021-02-13 18:34:11 uvicorn.error] : INFO - Started server process [16149]
+[2021-02-13 18:34:11 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:34:11 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:35:16 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:35:16 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:35:16 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:35:16 uvicorn.error] : INFO - Finished server process [16149]
+[2021-02-13 18:35:17 uvicorn.error] : INFO - Started server process [16296]
+[2021-02-13 18:35:17 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:35:17 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:35:26 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:35:26 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:35:26 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:35:26 uvicorn.error] : INFO - Finished server process [16296]
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Started server process [16311]
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:35:27 uvicorn.error] : INFO - Finished server process [16311]
+[2021-02-13 18:35:28 uvicorn.error] : INFO - Started server process [16318]
+[2021-02-13 18:35:28 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:35:28 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:35:38 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:35:38 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:35:38 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:35:38 uvicorn.error] : INFO - Finished server process [16318]
+[2021-02-13 18:35:39 uvicorn.error] : INFO - Started server process [16334]
+[2021-02-13 18:35:39 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:35:39 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:35:41 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:37:32 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:37:32 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:37:32 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:37:32 uvicorn.error] : INFO - Finished server process [16334]
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Started server process [16576]
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:37:33 uvicorn.error] : INFO - Finished server process [16576]
+[2021-02-13 18:37:34 uvicorn.error] : INFO - Started server process [16585]
+[2021-02-13 18:37:34 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:37:34 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:37:36 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:39:45 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:39:45 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:39:45 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:39:45 uvicorn.error] : INFO - Finished server process [16585]
+[2021-02-13 18:39:46 uvicorn.error] : INFO - Started server process [16859]
+[2021-02-13 18:39:46 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:39:46 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:39:49 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:40:03 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Finished server process [16859]
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Started server process [16904]
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:40:04 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:40:22 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:40:22 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:40:22 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:40:22 uvicorn.error] : INFO - Finished server process [16904]
+[2021-02-13 18:40:23 uvicorn.error] : INFO - Started server process [16933]
+[2021-02-13 18:40:23 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:40:23 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Finished server process [16933]
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Started server process [17126]
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Waiting for application startup.
+[2021-02-13 18:42:12 uvicorn.error] : INFO - Application startup complete.
+[2021-02-13 18:42:14 BACKEND-SERVICE] : DEBUG - SELECT users.id AS users_id, users.username AS users_username 
+FROM users 
+WHERE users.email = %(email_1)s AND users.password = %(password_1)s
+[2021-02-13 18:42:56 uvicorn.error] : INFO - Shutting down
+[2021-02-13 18:42:56 uvicorn.error] : INFO - Waiting for application shutdown.
+[2021-02-13 18:42:56 uvicorn.error] : INFO - Application shutdown complete.
+[2021-02-13 18:42:56 uvicorn.error] : INFO - Finished server process [17126]

@@ -1,0 +1,4 @@
+# THIS FILE IS INTENDEND FOR ONLY ALEMBIC MIGRATION
+# PLEASE CONSIDER TO CHANGE DB PARAM IN BOTH : .env .alembic_env
+
+DATABASE_URL = postgresql+psycopg2://app_user:QWEasd123@localhost:5432/upnews

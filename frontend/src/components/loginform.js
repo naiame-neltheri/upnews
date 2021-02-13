@@ -4,9 +4,13 @@ import Form from '../fragments/form.js';
 import Input from '../fragments/input.js';
 import Button from '../fragments/button.js';
 
+function handleForm(event) {
+	console.log(event);
+}
+
 function LoginForm() {
 	return(
-		<Form>
+		<Form onSubmit={ handleForm }>
 			<Container alignItems="flex-start">
 				<Label>Username :</Label>
 				<Input placeholder="Username" />
@@ -16,7 +20,7 @@ function LoginForm() {
 				<Input placeholder="Password" />
 			</Container>
 			<Container>
-				<Button wide type="success">login</Button>
+				<Button wide>login</Button>
 			</Container>
 		</Form>
 	);

@@ -6,6 +6,7 @@ import codecs, logging, sys
 from fastapi import FastAPI
 from api.core.config import cnf
 from logging.handlers import RotatingFileHandler
+from fastapi.middleware.cors import CORSMiddleware
 
 logging.basicConfig(
 	filename = cnf.LOG_FILE,
@@ -36,6 +37,12 @@ tags_medata = [
 	}
 ]
 
+origins = [
+	"http://localhost:3000",
+	"https://localhost:3000"
+]
+
 app = FastAPI(title = "UPNEWS backend service", description = "UPNEWS is a open source news sharing platform", version = "0.1.0", openapi_tags = tags_medata)
+app.add_middleware(CORSMiddleware, allow_origins = origins, allow_credentials = True, allow_methods = ["*"], allow_headers = ["*"])
 from api.modules.routes import route
 app.include_router(route)

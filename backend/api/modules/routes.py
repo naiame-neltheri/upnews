@@ -4,13 +4,30 @@
 # 2	  | Naiame		   | Added logging feature									| 2021-02-13
 #==============================================================================================
 import jwt, datetime
-from api.core.config import cnf
+from typing import Optional
+from functools import wraps
 from sqlalchemy.orm import Session
-from api.core.database import get_db
-from fastapi import APIRouter, Depends
 from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, Header, Cookie, Request
+
+from api import logger
+from api.core.config import cnf
+from api.core.database import get_db
 from api.core.crud import get_users, create_user, get_user, update_user, authenticate
 from api.modules.models import SuccessResponse, ErrorResponse, BaseUser, BaseResponse, AuthSuccess, UserCRUD, ListResponse, ProfileResponse
+
+def auth_required(func):
+	@wraps(func)
+	def wrapper(token: str,*args, **kwargs):
+		if not token:
+			return False
+		try:
+			decoded = jwt.decode(token.strip(), cnf.SECRET, algorithm = "HS256")
+			return func(*args, **kwargs)
+		except jwt.exceptions.InvalidSignatureError:
+			logger.error("Invalid signature received from : ")
+			return False
+	return wrapper
 
 auth_resp = {
 	200: {"model" : AuthSuccess, "description" : "Successful login"},
@@ -56,7 +73,8 @@ def update_profile(user_id, user: UserCRUD, db: Session = Depends(get_db)):
 		return ErrorResponse(msg = "Error occured while updating user data")
 
 @route.get('/get/{user_id}', response_model = ProfileResponse, responses = {500: {"model" : ErrorResponse, "description" : "Error occured"}}, tags = ["Users"], summary = "Get profile information")
-def get_profile(user_id, db: Session = Depends(get_db)):
+@auth_required
+def get_profile(user_id: int, db: Session = Depends(get_db), token: Optional[str] = Cookie(None)):
 	ret = get_user(db, user_id)
 	if ret:
 		return ProfileResponse(data = ret, success = True, error = False)

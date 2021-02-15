@@ -7,7 +7,8 @@ import {
 	background,
 	border,
 	typography,
-	shadow
+	shadow,
+	position
 } from 'styled-system';
 
 const container = styled.div`
@@ -40,6 +41,7 @@ const container = styled.div`
 	${border}
 	${typography}
 	${shadow}
+	${position}
 `
 
 export default container;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import {
-	space
+	space,
+	color
 } from 'styled-system';
 
 const input = styled.input`
@@ -20,8 +21,9 @@ const input = styled.input`
 	border-style: ridge;
 	border-radius: 5px;
 	border-width: 1px;
-	border-color: ${props => props.theme.colors.secondary}
+	border-color: ${props => props.theme.colors.secondary};
 	${space}
+	${color}
 `
 
 export default input;

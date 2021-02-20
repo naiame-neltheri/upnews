@@ -32,7 +32,7 @@ const container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: ${props => props.blackbg ? 'black' : 'white'};
+	background-color: ${props => props.blackbg ? 'black' : props.theme.colors.background};
 	${space}
 	${color}
 	${flexbox}

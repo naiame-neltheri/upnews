@@ -9,11 +9,12 @@ import Header from './components/header.js';
 import Container from './fragments/container.js';
 import Navbar from './components/navbar.js';
 import Liner from './fragments/liner.js';
+import Signature from './fragments/signature.js';
 
 function App() {
   return(
     <ThemeProvider theme = { theme }>
-        <Container display="block" p = {[0, 0, 2, 4]}>
+        <Container display="block" p = {[0, 0, 1, 1]} m = {[0, 0, 0, 0]}>
             <Header/>
             <Liner />
             <Navbar />
@@ -21,6 +22,9 @@ function App() {
     		<Switch>
                 { routes.map((route, i) => (<RouteWithSubRoutes key = {i} {...route} />)) }
     		</Switch>
+            <Container>
+                <Signature>&copy;2021, All rights reserved</Signature>
+            </Container>
         </Container>
     </ThemeProvider>
   )

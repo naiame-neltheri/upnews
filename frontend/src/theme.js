@@ -1,10 +1,10 @@
 const theme = {
 	fontSizes: [8, 10, 12, 14, 16, 20, 24, 32],
 	space: [0, 2, 4, 8, 16, 24, 32],
-	breakpoints: ['320px', '768px', '1260px', '1920px'],
+	breakpoints: ['360px', '768px', '1366px', '1920px'],
 	colors: {
-		primary: '#1E1E24',
-		background: '#2C2C54',
+		primary: '#04080F',
+		background: '#EFEFEF',
 		border: '#ACC3A6',
 		foreground: '#F5D6BA',
 		secondary: '#9DA2AB',

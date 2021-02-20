@@ -5,7 +5,7 @@ import Signature from '../fragments/signature.js';
 
 function header(props) {
 	return(
-		<Container pb={[3,2,2,2]}>
+		<Container>
 			<Link to="/">
 				<Title fontSize={[5,5,6,7]}>upnews</Title>
 			</Link>

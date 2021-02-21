@@ -14,15 +14,19 @@ import Signature from './fragments/signature.js';
 function App() {
   return(
     <ThemeProvider theme = { theme }>
-        <Container display="block" p = {[0, 0, 1, 1]} m = {[0, 0, 0, 0]}>
-            <Header/>
-            <Liner />
-            <Navbar />
-            <Liner />
-    		<Switch>
-                { routes.map((route, i) => (<RouteWithSubRoutes key = {i} {...route} />)) }
-    		</Switch>
-            <Container>
+        <Container height="100vh" justifyContent="space-between" p = {[0, 0, 1, 1]} m = {[0, 0, 0, 0]} >
+            <Container width="100%">
+                <Header/>
+                <Liner />
+                <Navbar />
+                <Liner />
+            </Container>
+            <Container flex="1" width="100%" justifyContent="flex-start">
+        		<Switch>
+                    { routes.map((route, i) => (<RouteWithSubRoutes key = {i} {...route} />)) }
+        		</Switch>
+            </Container>
+            <Container width="100%" height="10vh">
                 <Signature>&copy;2021, All rights reserved</Signature>
             </Container>
         </Container>

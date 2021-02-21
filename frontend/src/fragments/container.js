@@ -33,6 +33,7 @@ const container = styled.div`
 	justify-content: center;
 	align-items: center;
 	background-color: ${props => props.blackbg ? 'black' : props.theme.colors.background};
+	box-sizing: border-box;
 	${space}
 	${color}
 	${flexbox}

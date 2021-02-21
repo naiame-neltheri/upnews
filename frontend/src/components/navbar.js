@@ -1,9 +1,10 @@
+import Cookie from 'universal-cookie';
+import Link from '../fragments/navlink.js';
 import { useTheme } from 'styled-components';
 import NavItem from '../fragments/navitem.js';
-import Link from '../fragments/navlink.js';
 import Container from '../fragments/container.js';
 
-function isActiveCheck(match, location) {
+const isActiveCheck = (match, location) => {
 	if (match) {
 		return match.isExact;
 	}
@@ -12,10 +13,39 @@ function isActiveCheck(match, location) {
 	}
 }
 
-function Navbar(props) {
+// <NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
+// 	<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Login</Link>
+// </NavItem>
+
+const conditionalRender = (theme) => {
+	console.log("Conditional Render called");
+	let cookie = new Cookie();
+	let _token = cookie.get('token');
+	if (_token) {
+		return (
+			<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
+				<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Logout</Link>
+			</NavItem>
+		);
+	}
+	else {
+		return (
+			<>
+				<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
+					<Link to="/register" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Register</Link>
+				</NavItem>
+				<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
+					<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Login</Link>
+				</NavItem>			
+			</>
+		);
+	}
+}
+
+const Navbar = () => {
 	const theme = useTheme();
 	return(
-		<Container width="80%" margin="auto" p={[0, 0, 0, 0]} flexDirection="row">
+		<Container width="80%" ml="auto" mr="auto" p={[0, 0, 0, 0]} flexDirection="row">
 			<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
 				<Link activeStyle={{ 
 					textDecoration: `overline ${theme.colors.primary}`,
@@ -33,9 +63,7 @@ function Navbar(props) {
 			<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
 				<Link to="/about" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>About us</Link>
 			</NavItem>
-			<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
-				<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Login</Link>
-			</NavItem>
+			{conditionalRender(theme)}
 		</Container>
 	);
 }

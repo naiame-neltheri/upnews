@@ -29,7 +29,7 @@ const LoginScreen = () => {
 		});
 	}
 	return(
-		<Container p = {[1, 3, 4, 5]} width={['80%','80%', '40%', '40%']} margin="auto">
+		<Container p = {[1, 3, 4, 5]} width={['80%','80%', '40%', '40%']}>
 			<Form onSubmit={submitHandler}>
 				<Container alignItems="flex-start">
 					<Label>Username :</Label>

@@ -1,7 +1,8 @@
+import NotFound from './pages/notfound.js';
+import LoginScreen from './pages/loginsreen.js';
 import IndexScreen from './pages/indexscreen.js';
 import AboutScreen from './pages/aboutscreen.js';
-import LoginScreen from './pages/loginsreen.js';
-import NotFound from './pages/notfound.js';
+import RegisterScreen from './pages/registerscreen.js';
 
 const routes = [
 	{
@@ -11,6 +12,10 @@ const routes = [
 	{
 		path: "/login",
 		component: LoginScreen
+	},
+	{
+		path: "/register",
+		component: RegisterScreen
 	},
 	{
 		path: "/",

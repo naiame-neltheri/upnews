@@ -12,11 +12,11 @@ Create your own news paper by UPNEWS
 ------------
 ## FRONTEND
 - [x] Add router
-- [ ] Add About page
+- [x] Add About page
 - [ ] Add Contact page
 - [x] Add Landing page
 - [x] Add Login page
-- [ ] Add Register page
+- [x] Add Register page
 ------------
 ## BACKEND
 - [x] Authentication service

@@ -2,6 +2,7 @@
 #==============================================================================================
 # 1   | Naiame         | Intialized				                 				| 2021-02-12
 # 2	  | Naiame		   | Added logging feature									| 2021-02-13
+# 3   | Naiame		   | Added duplicated exceptions 							| 2021-03-12
 #==============================================================================================
 import jwt, datetime
 from typing import Optional
@@ -15,6 +16,7 @@ from api.core.config import cnf
 from api.core.database import get_db
 from api.core.crud import get_users, create_user, get_user, update_user, authenticate
 from api.modules.models import SuccessResponse, ErrorResponse, BaseUser, BaseResponse, AuthSuccess, UserCRUD, ListResponse, ProfileResponse
+from api.core.crud import DuplicatedRecordError
 
 def auth_required(func):
 	@wraps(func)
@@ -58,11 +60,16 @@ def login(user: BaseUser, db: Session = Depends(get_db)):
 
 @route.post("/register", response_model = BaseResponse, responses = register_resp, tags = ["Users"], summary = "Account creation")
 def register(user: UserCRUD, db: Session = Depends(get_db)):
-	ret = create_user(db, user)
-	if ret:
-		return SuccessResponse(msg = "User created")
-	else:
-		return ErrorResponse(msg = "Failed to create user")
+	try:
+		ret = create_user(db, user)
+		if ret:
+			logger.info("Use created")
+			return SuccessResponse(msg = "User created")
+		else:
+			logger.error("Failed to create user")
+			return ErrorResponse(msg = "Failed to create user")
+	except DuplicatedRecordError as error:
+		return ErrorResponse(msg = "Email already exists")
 
 @route.put('/update/{user_id}', response_model = BaseResponse, responses = update_resp, tags = ["Users"], summary = "Update user data")
 def update_profile(user_id, user: UserCRUD, db: Session = Depends(get_db)):

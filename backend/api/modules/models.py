@@ -14,7 +14,6 @@ class UserCRUD(BaseUser):
 	username: str
 	first_name: str
 	last_name: str
-	id: Optional[int]
 
 class BaseResponse(BaseModel):
 	success: bool

@@ -23,7 +23,7 @@ const label = styled.label`
 	}
 	text-transform: uppercase;
 	text-align: left;
-	color: ${props => props.theme.colors.primary};
+	color: ${props => props.error ? props.theme.colors.danger : props.theme.colors.primary};
 	font-weight: bold;
 	padding: 0px;
 	${color}

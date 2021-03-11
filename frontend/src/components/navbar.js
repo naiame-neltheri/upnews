@@ -13,18 +13,15 @@ const isActiveCheck = (match, location) => {
 	}
 }
 
-// <NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
-// 	<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Login</Link>
-// </NavItem>
-
 const conditionalRender = (theme) => {
 	console.log("Conditional Render called");
 	let cookie = new Cookie();
 	let _token = cookie.get('token');
 	if (_token) {
+		console.log(_token);
 		return (
 			<NavItem p={[0, 0, 0, 0]} fontSize={[1,1,2,4]}>
-				<Link to="/login" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Logout</Link>
+				<Link to="/logout" activeStyle={{ textDecoration: `overline ${theme.colors.primary}`, textDecorationThickness: '3px' }} isActive={isActiveCheck}>Logout</Link>
 			</NavItem>
 		);
 	}

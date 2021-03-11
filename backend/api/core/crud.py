@@ -2,6 +2,7 @@
 #==============================================================================================
 # 1   | Naiame         | Intialized				                 				| 2021-02-12
 # 2	  | Naiame		   | Added logging feature									| 2021-02-13
+# 3   | Naiame		   | Added duplicate Exception								| 2021-03-12
 #==============================================================================================
 from api import logger
 import hashlib, datetime
@@ -11,6 +12,10 @@ from api.modules import models
 from sqlalchemy.orm import load_only
 from sqlalchemy import and_
 from sqlalchemy.orm.exc import NoResultFound
+from sqlalchemy.exc import IntegrityError
+
+class DuplicatedRecordError(Exception):
+	pass
 
 def authenticate(db, email, pwd):
 	try:
@@ -51,14 +56,16 @@ def get_user(db, user_id):
 
 def create_user(db, user):
 	try:
-		hashed_pwd = hashlib.sha256(user.password.encode('utf8')).hexdigest()
-		new_user = schema.User(username = user.username, password = hashed_pwd, email = user.email, first_name = user.first_name, last_name = user.last_name)
+		new_user = schema.User(username = user.username, password = user.password, email = user.email, first_name = user.first_name, last_name = user.last_name)
 		db.add(new_user)
 		db.commit()
 		db.refresh(new_user)
 		logger.debug(f"Creating user : {new_user}")
 		logger.info(f"New user created with ID of {new_user.id}")
 		return True
+	except IntegrityError as error:
+		logger.info(f"Email : {user.email} already exists")
+		raise DuplicatedRecordError("Email already exists")
 	except Exception as error:
 		logger.error(f"{str(error)}")
 		return False
